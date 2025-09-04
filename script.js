@@ -101,12 +101,14 @@ function btn9(x){
    chal=chal+1;
    
    if(p==1){
+     mus[0].currentTime=0;
      mus[0].play();
     btn[x-1].style='background:blue;color:white;';
     btn[x-1].innerHTML='X';
     btn[x-1].disabled=1;
     p=2;
    }else if(p==2){
+     mus[1].currentTime=0;
      mus[1].play();
     btn[x-1].style='background:red;color:white;';
     btn[x-1].innerHTML='o';
@@ -166,6 +168,7 @@ function jha(){
         btn[ip].innerHTML='.';
       }
    pop.style='z-index:0;';
+    mus[3].currentTime=0;
    mus[3].pause();
 p1=0;
 p2=0;
@@ -188,6 +191,7 @@ function s(event){
 }
   function next(){
   // alert(round);
+    mus[4].currentTime=0
   mus[4].play();
    home[0].style='animation:home 1.2s 1;';
    setInterval(()=>{
